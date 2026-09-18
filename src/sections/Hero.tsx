@@ -39,7 +39,7 @@ export function Hero() {
         </div>
 
         <p style={{ fontFamily: F.inter, fontSize: 'clamp(15px,1.4vw,18px)', lineHeight: 1.75, color: C.muted, maxWidth: '480px', margin: '0 0 48px', fontWeight: 300 }}>
-          Дизайн и разработка цифровых продуктов — от стартап-платформ до коммерческих сайтов. Сейчас — дизайн и фронтенд в AnimaX, аниме-кинотеатр с 4K.
+          Дизайн и разработка цифровых продуктов — от стартап-платформ до коммерческих сайтов. Сейчас — дизайн и фронтенд в Yanima, аниме-кинотеатр с 4K.
         </p>
 
         <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>

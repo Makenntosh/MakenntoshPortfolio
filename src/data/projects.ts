@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
     type: 'startup',
     tags: ['Product Design', 'Frontend', 'Mobile', 'UI/UX'],
     image: yanimaImg,
-    gallery: [yanimaImg],
+    gallery: [yanimaImg, yanimaImg, yanimaImg],
     brief:
       'Современная платформа для просмотра аниме. Курировал всю визуальную часть от идеи до выпуска и продолжаю работу по сей день. Разработал сайт с адаптивом, мобильное приложение и административную панель. Проводил UX-интервью и опросы пользователей для улучшения продукта.',
     challenge:
@@ -44,9 +44,9 @@ export const PROJECTS: Project[] = [
     year: 'MMXXIV',
     type: 'design',
     tags: ['UI/UX', 'Web Design', 'Figma'],
-    image: 'https://images.unsplash.com/photo-1619904253375-23310eaf449b?w=800&h=500&fit=crop&auto=format',
+    image: 'HMG_Preview.png',
     gallery: [
-      'https://images.unsplash.com/photo-1619904253375-23310eaf449b?w=1400&h=800&fit=crop&auto=format',
+      'HMG_Preview.png',
     ],
     brief:
       'Разработал дизайн сайта для профессиональной съёмочной команды, специализирующейся на монтаже, режиссуре и видеосъёмке.',
@@ -61,8 +61,10 @@ export const PROJECTS: Project[] = [
     year: 'MMXXIV',
     type: 'dev',
     tags: ['Frontend', 'Product Design', 'React', 'TypeScript'],
-    image: medwayImg,
-    gallery: [medwayImg],
+    image: 'MedWay_preview.png',
+    gallery: [
+        'MedWay_Preview.png'
+    ],
     brief:
       'Дизайн и готовый лендинг под ключ для наркологической клиники. React + TypeScript, адаптивная вёрстка, акцент на доверии и анонимности.',
     challenge:
@@ -76,8 +78,10 @@ export const PROJECTS: Project[] = [
     year: 'MMXXIV',
     type: 'freelance',
     tags: ['Frontend', 'Product Design', 'HTML / CSS'],
-    image: vremyaImg,
-    gallery: [vremyaImg],
+    image: 'VremyaZaboty_Preview.png',
+    gallery: [
+        'VremyaZaboty_Preview.png'
+    ],
     brief:
       'Дизайн и готовый лендинг под ключ для пансионата для пожилых людей. HTML, CSS, адаптивная вёрстка. Тёплый, доверительный визуал.',
     challenge:
@@ -106,8 +110,10 @@ export const PROJECTS: Project[] = [
     year: 'MMXXIII',
     type: 'design',
     tags: ['Product Design', 'Mobile UI', 'Дизайн-система'],
-    image: trackerImg,
-    gallery: [trackerImg],
+    image: 'Traker_Preview.png',
+    gallery: [
+        'Traker_Preview.png'
+    ],
     brief:
       'Разработал дизайн-систему для мобильного трекера активности — 20+ экранов. Тёмная тема, кольца прогресса, дашборд здоровья.',
     challenge:

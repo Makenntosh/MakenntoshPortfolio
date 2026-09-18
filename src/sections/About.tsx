@@ -21,7 +21,7 @@ export function About() {
           <div style={{ marginBottom: '24px' }}><Ornament dim /></div>
 
           <p style={{ fontFamily: F.inter, fontSize: '16px', lineHeight: 1.8, color: C.muted, margin: '0 0 16px', fontWeight: 300 }}>
-            Продакт-дизайнер и фронтенд-разработчик с опытом 3+ года. Запускал коммерческие сайты, SaaS-продукты и мобильные приложения. Сейчас строю AnimaX — стриминг аниме с нативным 4K.
+            Продакт-дизайнер и фронтенд-разработчик с опытом 3+ года. Запускал коммерческие сайты, SaaS-продукты и мобильные приложения. Сейчас строю Yanima — стриминг аниме с нативным 4K.
           </p>
           <p style={{ fontFamily: F.inter, fontSize: '16px', lineHeight: 1.8, color: C.muted, margin: '0 0 36px', fontWeight: 300 }}>
             Каждый проект веду от начала до конца: исследование пользователей, прототипы в Figma, дизайн-системы и React-реализация.
