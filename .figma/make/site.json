@@ -1,0 +1,10 @@
+{
+  "description": "Create professional portfolio presentations showcasing projects for product designers, UI/UX designers, and frontend developers working in freelance and startup environments.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
