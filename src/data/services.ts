@@ -7,7 +7,7 @@ export type Service = {
 export const SERVICES: Service[] = [
   {
     numeral: 'I',
-    label: 'Продакт Дизайн',
+    label: 'Продукт Дизайн',
     desc: 'Исследования, прототипы, UX-аудит и готовый к производству UI — с нуля до запуска.',
   },
   {

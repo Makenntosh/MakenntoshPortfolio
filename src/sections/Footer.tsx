@@ -8,7 +8,7 @@ export function Footer() {
       <div style={{ textAlign: 'center', flex: 1, padding: '0 24px' }}>
         <Ornament dim />
         <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.22em', color: C.muted, textTransform: 'uppercase', marginTop: '8px' }}>
-          Продакт Дизайнер &amp; Frontend Разработчик · Anno Domini {new Date().getFullYear()}
+          Продукт Дизайнер &amp; Frontend Разработчик · Anno Domini {new Date().getFullYear()}
         </div>
       </div>
       <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.15em', color: C.muted }}>Factum cum React</span>
