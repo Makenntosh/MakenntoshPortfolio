@@ -17,7 +17,7 @@ export function FilterBtn({ label, active, onClick }: Props) {
         border: `1px solid ${active ? C.gold : hovered ? C.border : 'rgba(196,147,63,0.12)'}`,
         borderRadius: '1px',
         background: active ? C.gold : 'transparent',
-        color: active ? C.bg : hovered ? C.goldLt : C.dim,
+        color: active ? C.bg : hovered ? C.goldLt : C.muted,
         fontFamily: F.cinzel,
         fontSize: '10px',
         letterSpacing: '0.22em',

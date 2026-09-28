@@ -16,7 +16,7 @@ export function NavLink({ label, href }: Props) {
         fontSize: '10px',
         letterSpacing: '0.22em',
         textTransform: 'uppercase',
-        color: hovered ? C.goldLt : C.dim,
+        color: hovered ? C.goldLt : C.muted,
         textDecoration: 'none',
         transition: 'color 0.2s',
       }}

@@ -34,7 +34,7 @@ export function Hero() {
           Запускаю.
         </h1>
 
-        <div style={{ fontFamily: F.cinzel, fontSize: 'clamp(9px,1vw,11px)', letterSpacing: '0.35em', color: C.dim, margin: '20px 0 36px' }}>
+        <div style={{ fontFamily: F.cinzel, fontSize: 'clamp(9px,1vw,11px)', letterSpacing: '0.35em', color: C.muted, margin: '20px 0 36px' }}>
           ─── DESIGNVM · CODICEMQVE · FACIO ───
         </div>
 
@@ -49,10 +49,10 @@ export function Hero() {
 
         {/* Stats */}
         <div style={{ display: 'flex', gap: 'clamp(28px,5vw,64px)', marginTop: '72px', paddingTop: '36px', borderTop: `1px solid ${C.border}` }}>
-          {[['20+', 'Проектов сдано'], ['3+', 'Года опыта'], ['2', 'Активных продукта']].map(([n, l]) => (
+          {[['20+', 'Проектов сдано'], ['2+', 'Года опыта'], ['2', 'Активных продукта']].map(([n, l]) => (
             <div key={l}>
               <div style={{ fontFamily: F.cinzelDec, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: C.gold, lineHeight: 1 }}>{n}</div>
-              <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: C.dim, marginTop: '6px' }}>{l}</div>
+              <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', color: C.muted, marginTop: '6px' }}>{l}</div>
             </div>
           ))}
         </div>

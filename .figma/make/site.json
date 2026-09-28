@@ -1,10 +1,12 @@
 {
-  "description": "Create professional portfolio presentations showcasing projects for product designers, UI/UX designers, and frontend developers working in freelance and startup environments.",
+  "description": "Product Designer с frontend-бэкграундом. Проектирование цифровых продуктов, UX/UI, дизайн-системы, прототипирование и реализация интерфейсов.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
     "ignoreReducedMotion": false
-  }
+  },
+  "title": "Никита Гололобов — Product Designer / UX/UI Designer",
+  "language": "ru"
 }

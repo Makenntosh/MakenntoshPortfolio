@@ -18,7 +18,7 @@ export const SERVICES: Service[] = [
   {
     numeral: 'III',
     label: 'Frontend Разработка',
-    desc: 'React, TypeScript, Tailwind — production-ready код по вашим макетам или с нуля.',
+    desc: 'React, NextJs, TypeScript, Tailwind — production-ready код по вашим макетам или с нуля.',
   },
   {
     numeral: 'IV',

@@ -33,7 +33,7 @@ export function FeaturedProject({ onOpen }: Props) {
           <div style={{ padding: 'clamp(36px,5vw,60px) clamp(28px,4vw,52px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '22px' }}>
             <div>
               <Arch width={56} height={28} color={C.border} />
-              <div style={{ marginTop: '14px', fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.3em', color: C.dim }}>{p.year}</div>
+              <div style={{ marginTop: '14px', fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.3em', color: C.muted }}>{p.year}</div>
             </div>
 
             <h2 style={{ fontFamily: F.cinzelDec, fontSize: 'clamp(28px,4vw,52px)', fontWeight: 900, color: C.text, margin: 0, letterSpacing: '0.04em', lineHeight: 1.05 }}>

@@ -31,7 +31,7 @@ export function ProjectsGrid({ onOpen }: Props) {
       </div>
 
       {gridProjects.length === 0 ? (
-        <p style={{ textAlign: 'center', fontFamily: F.cinzel, fontSize: '11px', letterSpacing: '0.25em', color: C.dim, padding: '64px 0' }}>
+        <p style={{ textAlign: 'center', fontFamily: F.cinzel, fontSize: '11px', letterSpacing: '0.25em', color: C.muted, padding: '64px 0' }}>
           — NIHIL INVENTUM —
         </p>
       ) : (
@@ -56,7 +56,7 @@ export function ProjectsGrid({ onOpen }: Props) {
                   />
                   <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to top, ${C.surf} 0%, transparent 60%)` }} />
                   {isHovered && <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: `linear-gradient(to right, transparent, ${C.gold}, transparent)` }} />}
-                  <span style={{ position: 'absolute', top: '14px', right: '14px', fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.2em', color: C.dim }}>{p.year}</span>
+                  <span style={{ position: 'absolute', top: '14px', right: '14px', fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.2em', color: C.muted }}>{p.year}</span>
                 </div>
 
                 {/* Content */}
@@ -66,10 +66,10 @@ export function ProjectsGrid({ onOpen }: Props) {
                   <p style={{ fontFamily: F.inter, fontSize: '14px', color: C.muted, lineHeight: 1.65, margin: 0, fontWeight: 300, flex: 1 }}>{p.brief}</p>
                   <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '4px' }}>
                     {p.tags.map((tag) => (
-                      <span key={tag} style={{ padding: '2px 8px', border: `1px solid ${C.border}`, fontFamily: F.cinzel, fontSize: '8px', letterSpacing: '0.18em', color: C.dim, textTransform: 'uppercase' }}>{tag}</span>
+                      <span key={tag} style={{ padding: '2px 8px', border: `1px solid ${C.border}`, fontFamily: F.cinzel, fontSize: '8px', letterSpacing: '0.18em', color: C.muted, textTransform: 'uppercase' }}>{tag}</span>
                     ))}
                   </div>
-                  <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.18em', color: isHovered ? C.gold : C.dim, marginTop: '6px', transition: 'color 0.25s' }}>
+                  <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.18em', color: isHovered ? C.gold : C.muted, marginTop: '6px', transition: 'color 0.25s' }}>
                     Открыть кейс →
                   </div>
                 </div>

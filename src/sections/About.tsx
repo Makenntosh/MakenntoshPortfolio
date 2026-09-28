@@ -21,7 +21,7 @@ export function About() {
           <div style={{ marginBottom: '24px' }}><Ornament dim /></div>
 
           <p style={{ fontFamily: F.inter, fontSize: '16px', lineHeight: 1.8, color: C.muted, margin: '0 0 16px', fontWeight: 300 }}>
-            Продакт-дизайнер и фронтенд-разработчик с опытом 3+ года. Запускал коммерческие сайты, SaaS-продукты и мобильные приложения. Сейчас строю Yanima — стриминг аниме с нативным 4K.
+            Продакт-дизайнер и фронтенд-разработчик с опытом более 2 лет. Запускал коммерческие сайты, SaaS-продукты и мобильные приложения. Сейчас строю Yanima — стриминг аниме с нативным 4K.
           </p>
           <p style={{ fontFamily: F.inter, fontSize: '16px', lineHeight: 1.8, color: C.muted, margin: '0 0 36px', fontWeight: 300 }}>
             Каждый проект веду от начала до конца: исследование пользователей, прототипы в Figma, дизайн-системы и React-реализация.
@@ -30,12 +30,12 @@ export function About() {
           <div style={{ marginBottom: '32px' }}><Ornament dim /></div>
 
           <div>
-            <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.28em', color: C.dim, textTransform: 'uppercase', marginBottom: '14px' }}>
+            <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.28em', color: C.muted, textTransform: 'uppercase', marginBottom: '14px' }}>
               Instrumenta · Стек
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               {STACK.map((t) => (
-                <span key={t} style={{ padding: '4px 10px', border: `1px solid ${C.border}`, fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.15em', color: C.dim }}>{t}</span>
+                <span key={t} style={{ padding: '4px 10px', border: `1px solid ${C.border}`, fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.15em', color: C.muted }}>{t}</span>
               ))}
             </div>
           </div>

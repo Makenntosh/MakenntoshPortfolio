@@ -4,10 +4,9 @@ import { SectionLabel } from '../ui/SectionLabel'
 import { Ornament } from '../ui/Ornament'
 
 const CONTACTS = [
-  { label: 'Email',    value: 'hello@designer.dev',      href: 'mailto:hello@designer.dev' },
-  { label: 'Telegram', value: '@designer_dev',           href: 'https://t.me/designer_dev'  },
-  { label: 'Behance',  value: 'behance.net/designer',    href: '#'                          },
-  { label: 'GitHub',   value: 'github.com/designer',     href: '#'                          },
+  { label: 'GitHub', value: 'github.com/Makenntosh', href: 'https://github.com/Makenntosh' },
+  { label: 'Email',    value: 'nik.gololobov91@mail.ru',      href: 'mailto:nik.gololobov91@mail.ru' },
+  { label: 'Telegram', value: '@Makenntosh',           href: 'https://t.me/Makenntosh'  },
 ]
 
 export function Contact() {
@@ -42,13 +41,13 @@ function ContactRow({ label, value, href }: { label: string; value: string; href
   return (
     <a
       href={href}
-      style={{ display: 'flex', alignItems: 'center', gap: '20px', textDecoration: 'none', padding: '18px 0', borderBottom: `1px solid ${C.border}` }}
+      style={{ display: 'flex', alignItems: 'center', gap: 'clamp(8px,2vw,20px)', textDecoration: 'none', padding: '18px 0', borderBottom: `1px solid ${C.border}` }}
       onMouseEnter={() => setH(true)}
       onMouseLeave={() => setH(false)}
     >
-      <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: C.dim, width: '80px', flexShrink: 0 }}>{label}</span>
-      <span style={{ fontFamily: F.inter, fontSize: '17px', color: h ? C.goldLt : C.muted, transition: 'color 0.2s', fontWeight: 400 }}>{value}</span>
-      <span style={{ marginLeft: 'auto', color: h ? C.gold : C.dim, transition: 'color 0.2s, transform 0.2s', transform: h ? 'translateX(4px)' : 'translateX(0)', display: 'inline-block', fontSize: '16px' }}>→</span>
+      <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: C.muted, width: '80px', flexShrink: 0 }}>{label}</span>
+      <span style={{ fontFamily: F.inter, minWidth: 0, overflowWrap: 'anywhere', fontSize: '17px', color: h ? C.goldLt : C.muted, transition: 'color 0.2s', fontWeight: 400 }}>{value}</span>
+      <span style={{ marginLeft: 'auto', color: h ? C.gold : C.muted, transition: 'color 0.2s, transform 0.2s', transform: h ? 'translateX(4px)' : 'translateX(0)', display: 'inline-block', fontSize: '16px' }}>→</span>
     </a>
   )
 }

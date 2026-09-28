@@ -29,7 +29,7 @@ export function ProjectPage({ projectId, onBack }: Props) {
   if (!project) {
     return (
       <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: C.bg }}>
-        <p style={{ fontFamily: F.cinzel, color: C.dim }}>Проект не найден</p>
+        <p style={{ fontFamily: F.cinzel, color: C.muted }}>Проект не найден</p>
       </div>
     )
   }
@@ -40,7 +40,7 @@ export function ProjectPage({ projectId, onBack }: Props) {
     <div style={{ background: C.bg, color: C.text, fontFamily: F.inter, minHeight: '100vh' }}>
 
       {/* ── TOP BAR ── */}
-      <div style={{
+      <div className="project-topbar" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         height: '64px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '0 clamp(24px,4vw,60px)',
@@ -49,8 +49,8 @@ export function ProjectPage({ projectId, onBack }: Props) {
         borderBottom: `1px solid ${C.border}`,
       }}>
         <BackBtn onBack={onBack} />
-        <span style={{ fontFamily: F.cinzelDec, fontSize: '15px', fontWeight: 900, color: C.gold, letterSpacing: '0.1em' }}>A · V</span>
-        <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.22em', color: C.dim, textTransform: 'uppercase' }}>
+        <span style={{ fontFamily: F.cinzelDec, fontSize: '15px', fontWeight: 900, color: C.gold, letterSpacing: '0.1em' }}>MAKEnntosh</span>
+        <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.22em', color: C.muted, textTransform: 'uppercase' }}>
           {project.type === 'startup' ? 'Стартап' : project.type === 'design' ? 'Дизайн' : project.type === 'dev' ? 'Frontend' : 'Фриланс'}
         </span>
       </div>
@@ -79,7 +79,7 @@ export function ProjectPage({ projectId, onBack }: Props) {
           <h1 style={{ fontFamily: F.cinzelDec, fontSize: 'clamp(36px,6vw,80px)', fontWeight: 900, color: C.text, margin: '0 0 8px', letterSpacing: '0.04em', lineHeight: 1 }}>
             {project.title}
           </h1>
-          <p style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.28em', color: C.dim }}>{project.year}</p>
+          <p style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.28em', color: C.muted }}>{project.year}</p>
         </div>
       </div>
 
@@ -90,6 +90,32 @@ export function ProjectPage({ projectId, onBack }: Props) {
           <div>
             <div style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.28em', color: C.gold, textTransform: 'uppercase', marginBottom: '16px' }}>О проекте</div>
             <p style={{ fontFamily: F.inter, fontSize: '17px', lineHeight: 1.82, color: C.muted, margin: 0, fontWeight: 300 }}>{project.brief}</p>
+            {project.website && (
+              <a
+                href={project.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Перейти на сайт ${project.title} (в новой вкладке)`}
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '10px',
+                  marginTop: '24px', padding: '14px 24px',
+                  border: `1px solid ${C.gold}`, color: C.gold,
+                  fontFamily: F.cinzel, fontSize: '10px', letterSpacing: '0.18em',
+                  textTransform: 'uppercase', textDecoration: 'none',
+                  transition: 'background 0.25s, color 0.25s',
+                }}
+                onMouseEnter={(event) => {
+                  event.currentTarget.style.background = C.gold
+                  event.currentTarget.style.color = C.bg
+                }}
+                onMouseLeave={(event) => {
+                  event.currentTarget.style.background = 'transparent'
+                  event.currentTarget.style.color = C.gold
+                }}
+              >
+                Перейти на сайт <span aria-hidden="true">↗</span>
+              </a>
+            )}
           </div>
 
           {/* Challenge + Result */}
@@ -110,7 +136,7 @@ export function ProjectPage({ projectId, onBack }: Props) {
       <div style={{ padding: '0 clamp(24px,4vw,60px)' }}>
         <div style={{ height: '2px', background: GoldBar }} />
         <div style={{ display: 'flex', justifyContent: 'center', padding: '16px 0' }}>
-          <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.3em', color: C.dim, textTransform: 'uppercase' }}>Скриншоты · Gallery</span>
+          <span style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.3em', color: C.muted, textTransform: 'uppercase' }}>Скриншоты · Gallery</span>
         </div>
         <div style={{ height: '2px', background: GoldBar }} />
       </div>
@@ -129,7 +155,7 @@ export function ProjectPage({ projectId, onBack }: Props) {
           </div>
         )}
 
-        <p style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.18em', color: C.dim, textAlign: 'center', marginTop: '20px', textTransform: 'uppercase' }}>
+        <p style={{ fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.18em', color: C.muted, textAlign: 'center', marginTop: '20px', textTransform: 'uppercase' }}>
           ✦ Кликните по изображению для увеличения ✦
         </p>
       </section>
@@ -171,12 +197,12 @@ export function ProjectPage({ projectId, onBack }: Props) {
             style={{
               position: 'absolute', top: '24px', right: '24px',
               background: 'transparent', border: `1px solid ${C.border}`,
-              color: C.dim, fontFamily: F.cinzel, fontSize: '9px',
+              color: C.muted, fontFamily: F.cinzel, fontSize: '9px',
               letterSpacing: '0.22em', padding: '6px 14px', cursor: 'pointer',
               transition: 'border-color 0.2s, color 0.2s',
             }}
             onMouseEnter={(e) => { e.currentTarget.style.borderColor = C.gold; e.currentTarget.style.color = C.gold }}
-            onMouseLeave={(e) => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.dim }}
+            onMouseLeave={(e) => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.muted }}
           >
             ESC · Закрыть
           </button>

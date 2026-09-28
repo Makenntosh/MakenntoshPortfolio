@@ -19,17 +19,19 @@ export type Project = {
   challenge: string
   result: string
   featured?: boolean
+  website?: string
 }
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
     title: 'Yanima',
+    website: 'https://yanima.space',
     year: 'MMXXIV – н.в.',
     type: 'startup',
     tags: ['Product Design', 'Frontend', 'Mobile', 'UI/UX'],
     image: yanimaImg,
-    gallery: [yanimaImg, yanimaImg, yanimaImg],
+    gallery: [yanimaImg],
     brief:
       'Современная платформа для просмотра аниме. Курировал всю визуальную часть от идеи до выпуска и продолжаю работу по сей день. Разработал сайт с адаптивом, мобильное приложение и административную панель. Проводил UX-интервью и опросы пользователей для улучшения продукта.',
     challenge:
@@ -58,6 +60,7 @@ export const PROJECTS: Project[] = [
   {
     id: 3,
     title: 'MedWay',
+    website: 'https://med-way.moscow',
     year: 'MMXXIV',
     type: 'dev',
     tags: ['Frontend', 'Product Design', 'React', 'TypeScript'],
@@ -75,6 +78,7 @@ export const PROJECTS: Project[] = [
   {
     id: 4,
     title: 'Время заботы',
+    website: 'https://vremya-zaboty.ru',
     year: 'MMXXIV',
     type: 'freelance',
     tags: ['Frontend', 'Product Design', 'HTML / CSS'],
