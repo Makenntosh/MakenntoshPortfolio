@@ -4,6 +4,8 @@ import perfumeModeImg   from '../imports/Perfume_mode.png'
 import trackerImg       from '../imports/_________________.png'
 import medwayImg        from '../imports/image-1.png'
 import vremyaImg        from '../imports/image-2.png'
+import { yanimaMobileScreens } from './yanimaMobileScreens'
+import { yanimaWebAssets } from './yanimaWebScreens'
 
 export type ProjectType = 'startup' | 'freelance' | 'design' | 'dev'
 
@@ -31,13 +33,13 @@ export const PROJECTS: Project[] = [
     type: 'startup',
     tags: ['Product Design', 'Frontend', 'Mobile', 'UI/UX'],
     image: yanimaImg,
-    gallery: [yanimaImg],
+    gallery: [yanimaImg, ...yanimaWebAssets.map(asset => asset.src!), ...yanimaMobileScreens.map(screen => screen.src!)],
     brief:
-      'Современная платформа для просмотра аниме. Курировал всю визуальную часть от идеи до выпуска и продолжаю работу по сей день. Разработал сайт с адаптивом, мобильное приложение и административную панель. Проводил UX-интервью и опросы пользователей для улучшения продукта.',
+      'Платформа для поиска и просмотра аниме. Проектирование пользовательских сценариев, адаптивного web-интерфейса и мобильного приложения. Дизайн и frontend-реализация с итерациями на основе обратной связи пользователей и разработчиков.',
     challenge:
       'Создать цельный визуальный язык для аниме-платформы, конкурирующей с крупными сервисами. Выстроить удобную навигацию по большому каталогу с персонализацией и сохранить узнаваемость бренда на всех платформах — web, mobile, admin.',
     result:
-      'Платформа запущена и показывает сильные результаты. Пользователи отмечают интуитивность интерфейса. Продукт продолжает развиваться — регулярно выходят новые фичи по результатам UX-исследований.',
+      'Спроектированы основные пользовательские сценарии, адаптивный web-интерфейс и mobile-интерфейс. Дизайн перенесён в production; решения улучшались на основе обратной связи пользователей и разработчиков.',
     featured: true,
   },
   {

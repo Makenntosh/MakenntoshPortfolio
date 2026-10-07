@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import { C } from './tokens'
 
 import { Nav } from './sections/Nav'
@@ -10,6 +10,8 @@ import { About } from './sections/About'
 import { Contact } from './sections/Contact'
 import { Footer } from './sections/Footer'
 import { ProjectPage } from './pages/ProjectPage'
+
+const YanimaPage = lazy(() => import('./pages/YanimaPage'))
 
 // ── Minimal hash router ────────────────────────────────────────────────────────
 type Route =
@@ -49,7 +51,11 @@ export default function App() {
   if (route.type === 'project') {
     return (
       <div style={pageStyle}>
-        <ProjectPage projectId={route.id} onBack={goHome} />
+        {route.id === 1 ? (
+          <Suspense fallback={<div style={{ minHeight: '100vh', color: C.muted, padding: '120px 24px' }} role="status">Загрузка кейса Yanima…</div>}>
+            <YanimaPage onBack={goHome} />
+          </Suspense>
+        ) : <ProjectPage projectId={route.id} onBack={goHome} />}
       </div>
     )
   }

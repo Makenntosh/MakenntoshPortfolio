@@ -5,6 +5,9 @@ import { SectionLabel } from '../ui/SectionLabel'
 import { Ornament } from '../ui/Ornament'
 import { Arch } from '../ui/Arch'
 import { GoldBarEl } from '../ui/GoldBar'
+import YanimaShowcase from '../components/YanimaShowcase'
+import { yanimaMobileScreens } from '../data/yanimaMobileScreens'
+import { yanimaWebScreens } from '../data/yanimaWebScreens'
 
 
 type Props = {
@@ -22,11 +25,13 @@ export function FeaturedProject({ onOpen }: Props) {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
           {/* Image */}
           <div style={{ position: 'relative', minHeight: '380px', background: C.card, overflow: 'hidden' }}>
+            {p.id === 1 ? <div style={{ height: '100%', display: 'flex', alignItems: 'center' }}><YanimaShowcase assets={[yanimaWebScreens.find(asset => asset.id === "web-home")!, yanimaMobileScreens.find(asset => asset.id === "mobile-home")!]} onOpen={() => onOpen(p.id)} /></div> : <>
             <img src={p.image} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', opacity: 0.5, position: 'absolute', inset: 0 }} />
             <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to right, transparent 50%, ${C.surf}), linear-gradient(to top, ${C.surf} 0%, transparent 60%)` }} />
             <div style={{ position: 'absolute', top: '28px', left: '28px', padding: '5px 14px', border: `1px solid rgba(139,46,26,0.7)`, color: '#C4624E', fontFamily: F.cinzel, fontSize: '9px', letterSpacing: '0.25em', background: 'rgba(139,46,26,0.15)' }}>
               IV·K · PLATFORM
             </div>
+            </>}
           </div>
 
           {/* Text */}

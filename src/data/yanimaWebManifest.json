@@ -1,0 +1,344 @@
+[
+  {
+    "id": "web-home",
+    "file": "Главная.png",
+    "title": "Главная",
+    "caption": "Главная · Рекомендации, новые эпизоды и популярное",
+    "width": 2560,
+    "height": 2480,
+    "presentation": "browser"
+  },
+  {
+    "id": "search",
+    "file": "Поиск.png",
+    "title": "Поиск и фильтры",
+    "caption": "Поиск · Каталог и расширенные параметры",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "filters",
+    "file": "Поиск-1.png",
+    "title": "Фильтры и сортировка",
+    "caption": "Каталог · Раскрытая сортировка выдачи",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-releases",
+    "file": "Раскрытый список.png",
+    "title": "Популярное",
+    "caption": "Каталог · Подробная сетка релизов",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "anime",
+    "file": "Страница аниме.png",
+    "title": "Страница аниме",
+    "caption": "Тайтл · Информация, кадры и связанные аниме",
+    "width": 2560,
+    "height": 1976,
+    "presentation": "browser"
+  },
+  {
+    "id": "player",
+    "file": "Пллер.png",
+    "title": "Плеер",
+    "caption": "Плеер · Управление воспроизведением и настройки",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-player-vignette",
+    "file": "Пллер (Виньетка).png",
+    "title": "Просмотр аниме",
+    "caption": "Просмотр · Виньетка и элементы управления",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-player-voice",
+    "file": "Пллер (выбор озвучки).png",
+    "title": "Выбор озвучки",
+    "caption": "Плеер · Доступные варианты озвучки",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "player-states",
+    "file": "Пллер (ошибка).png",
+    "title": "Ошибка плеера",
+    "caption": "Плеер · Сообщение об ошибке сети",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-player-moment",
+    "file": "Пллер (Момент).png",
+    "title": "Момент просмотра",
+    "caption": "Плеер · Действия во время просмотра",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "seasons-desktop",
+    "file": "Пллер (сезоны и эпизоды).png",
+    "title": "Сезоны и эпизоды",
+    "caption": "Просмотр · Сезоны и горизонтальные списки эпизодов",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "player-episodes",
+    "file": "Пллер (сезоны и эпизоды grid + поиск).png",
+    "title": "Поиск эпизода",
+    "caption": "Просмотр · Сетка эпизодов и поиск",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-episodes-scrolled",
+    "file": "Пллер (Проскролено. Сезоны и эпизоды grid + поиск).png",
+    "title": "Длинный список эпизодов",
+    "caption": "Просмотр · Сетка после прокрутки",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-watch-together",
+    "file": "Пллер (совместный просмотр).png",
+    "title": "Совместный просмотр",
+    "caption": "Совместный просмотр · Участники комнаты",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-watch-chat",
+    "file": "Пллер (совместный просмотр; открыт чат).png",
+    "title": "Чат комнаты",
+    "caption": "Совместный просмотр · Открытый чат",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-watch-notifications",
+    "file": "Пллер (Уведомления из чата).png",
+    "title": "Уведомления чата",
+    "caption": "Совместный просмотр · Новое сообщение",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-watch-sync",
+    "file": "Пллер (Синхронизация отключена).png",
+    "title": "Синхронизация",
+    "caption": "Совместный просмотр · Синхронизация отключена",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "calendar",
+    "file": "Расписание все (выбрано).png",
+    "title": "Расписание",
+    "caption": "Расписание · Все дни недели",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-calendar-day",
+    "file": "Расписание выбранный день.png",
+    "title": "Выбранный день",
+    "caption": "Расписание · Релизы выбранного дня",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-profile",
+    "file": "Профиль.png",
+    "title": "Профиль",
+    "caption": "Профиль · История, статистика и комментарии",
+    "width": 2560,
+    "height": 1702,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-profile-alternate",
+    "file": "Профиль-1.png",
+    "title": "Оформление профиля",
+    "caption": "Профиль · Другой баннер и аватар",
+    "width": 2560,
+    "height": 1702,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-profile-lists",
+    "file": "Профиль (списки).png",
+    "title": "Списки профиля",
+    "caption": "Профиль · Личная коллекция аниме",
+    "width": 2560,
+    "height": 1702,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-profile-reply",
+    "file": "Профиль (ответ на комментарии + лайк, дизлайк).png",
+    "title": "Ответы и реакции",
+    "caption": "Профиль · Ответ на комментарий и реакции",
+    "width": 2560,
+    "height": 1702,
+    "presentation": "browser"
+  },
+  {
+    "id": "settings-main",
+    "file": "Настройки (Основные параметры).png",
+    "title": "Основные настройки",
+    "caption": "Настройки · Аккаунт и связанные сервисы",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "settings-customization",
+    "file": "Настройки (Настройки профиля).png",
+    "title": "Настройки профиля",
+    "caption": "Настройки · Аватар и выбор баннера",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-settings-banner",
+    "file": "Настройки (Настройки профиля)-1.png",
+    "title": "Оформление аккаунта",
+    "caption": "Настройки · Превью баннера профиля",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-settings-notifications",
+    "file": "Настройки (Уведомления).png",
+    "title": "Настройки уведомлений",
+    "caption": "Настройки · Общие уведомления и подписки",
+    "width": 2560,
+    "height": 1080,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-auth",
+    "file": "Auth.png",
+    "title": "Вход в Yanima",
+    "caption": "Авторизация · Выбор способа входа",
+    "width": 2560,
+    "height": 1280,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-auth-options",
+    "file": "Auth-1.png",
+    "title": "Выбор аккаунта",
+    "caption": "Авторизация · Выбор аккаунта для регистрации",
+    "width": 2560,
+    "height": 1280,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-auth-enabled",
+    "file": "авторизация с активными соглашениями.png",
+    "title": "Соглашения приняты",
+    "caption": "Авторизация · Активные способы входа",
+    "width": 2160,
+    "height": 1387,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-auth-disabled",
+    "file": "авторизация с неактивными соглашениями.png",
+    "title": "Соглашения не приняты",
+    "caption": "Авторизация · Неактивные способы входа",
+    "width": 2160,
+    "height": 1387,
+    "presentation": "browser"
+  },
+  {
+    "id": "web-subscription",
+    "file": "Подписка.png",
+    "title": "Yanima Space",
+    "caption": "Подписка · Возможности и подключение Space Y",
+    "width": 2560,
+    "height": 1133,
+    "presentation": "browser"
+  },
+  {
+    "id": "system-foundations",
+    "file": "Yanima — каталог дизайн-системы.png",
+    "title": "Основы визуального языка",
+    "caption": "Дизайн-система · Палитра и типографика",
+    "width": 1400,
+    "height": 1650,
+    "presentation": "sheet"
+  },
+  {
+    "id": "system-core",
+    "file": "Yanima — каталог дизайн-системы.png",
+    "title": "Общее ядро",
+    "caption": "Дизайн-система · Кнопки, иконки, рейтинги и карточки",
+    "width": 1400,
+    "height": 1150,
+    "presentation": "sheet"
+  },
+  {
+    "id": "system-web",
+    "file": "Yanima — каталог дизайн-системы.png",
+    "title": "Компоненты Web",
+    "caption": "Дизайн-система · Навигация, баннеры, поля и плеер",
+    "width": 1400,
+    "height": 4910,
+    "presentation": "sheet"
+  },
+  {
+    "id": "system-mobile",
+    "file": "Yanima — каталог дизайн-системы.png",
+    "title": "Компоненты Mobile",
+    "caption": "Дизайн-система · Компактные варианты компонентов",
+    "width": 1400,
+    "height": 1420,
+    "presentation": "sheet"
+  },
+  {
+    "id": "system-tv",
+    "file": "Yanima — каталог дизайн-системы.png",
+    "title": "Направление TV",
+    "caption": "Дизайн-система · Предложение для TV и состояния фокуса",
+    "width": 1400,
+    "height": 1295,
+    "presentation": "sheet"
+  },
+  {
+    "id": "system-definitions",
+    "file": "Yanima — каталог дизайн-системы.png",
+    "title": "Семейства и варианты",
+    "caption": "Дизайн-система · Основные определения компонентов",
+    "width": 1400,
+    "height": 3412,
+    "presentation": "sheet"
+  }
+]
