@@ -13,6 +13,41 @@ export type CaseAsset = {
   fit?: "contain" | "cover"
   position?: string
   presentation?: "phone" | "browser" | "sheet"
+  address?: string
+}
+
+export type ShowcaseOptions = {
+  brand?: string
+  label?: string
+  tagline?: string
+  variant?: "yanima" | "medway"
+}
+
+export type DesignSystemSpec = {
+  brand: string
+  note: string
+  colors: {
+    name: string
+    role: string
+    value: string
+  }[]
+  fonts: {
+    heading: string
+    body: string
+  }
+  typography: {
+    label: string
+    text: string
+    size: number
+    mobileSize: number
+    lineHeight: number
+    weight: number
+    kind: "heading" | "body" | "label"
+  }[]
+  spacing: number[]
+  radii: number[]
+  containerWidth: number
+  mobileInset: number
 }
 
 export type CaseCard = {
@@ -21,6 +56,9 @@ export type CaseCard = {
   label?: string
 }
 export type CaseBlock = {
+  type: "design-system"
+  system: DesignSystemSpec
+} | {
   type: "text"
   text: string
 } | {
@@ -109,6 +147,12 @@ export type CaseStudy = {
     }[]
     hero: string
     showcase?: string[]
+    showcaseOptions?: ShowcaseOptions
+    screenSummary?: string
+    shortcuts?: {
+      target: string
+      label: string
+    }[]
   }
   navigation: {
     label: string

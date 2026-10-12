@@ -1,4 +1,4 @@
-import type { CaseAsset } from "./case-study/types"
+import type { CaseAsset, ShowcaseOptions } from "./case-study/types"
 import "./yanima-showcase.css"
 
 export function PhoneMockup({
@@ -41,7 +41,7 @@ export function BrowserMockup({
     <span className="yanima-browser">
       <span className="yanima-browser-bar" aria-hidden="true">
         <span className="yanima-browser-dots">● ● ●</span>
-        <span>yanima.space</span>
+        <span>{asset.address ?? "yanima.space"}</span>
         <span>↗</span>
       </span>
       <span
@@ -69,17 +69,27 @@ export default function YanimaShowcase({
   assets,
   onOpen,
   priority = false,
+  brand = "YANIMA",
+  label,
+  tagline,
+  variant = "yanima",
 }: {
   assets: CaseAsset[]
   onOpen: (id: string) => void
   priority?: boolean
-}) {
+} & ShowcaseOptions) {
   const hasWeb = assets.some((asset) => asset.presentation === "browser")
   return (
-    <div className={`yanima-showcase ${hasWeb ? "yanima-showcase-web" : ""}`}>
+    <div
+      className={`yanima-showcase ${hasWeb ? "yanima-showcase-web" : ""} ${
+        variant === "medway" ? "medway-showcase" : ""
+      }`}
+    >
       <div className="yanima-showcase-label">
-        <span>YANIMA</span>
-        <span>{hasWeb ? "WEB & MOBILE EXPERIENCE" : "MOBILE EXPERIENCE"}</span>
+        <span>{brand}</span>
+        <span>
+          {label ?? (hasWeb ? "WEB & MOBILE EXPERIENCE" : "MOBILE EXPERIENCE")}
+        </span>
       </div>
       <div className="yanima-showcase-devices">
         {assets.map((asset) => (
@@ -102,7 +112,10 @@ export default function YanimaShowcase({
         ))}
       </div>
       <div className="yanima-showcase-footer">
-        <span>{hasWeb ? "Один мир. Любой экран." : "Аниме всегда рядом."}</span>
+        <span>
+          {tagline ??
+            (hasWeb ? "Один мир. Любой экран." : "Аниме всегда рядом.")}
+        </span>
         <span>Открыть экраны ↗</span>
       </div>
     </div>

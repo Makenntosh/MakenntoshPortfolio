@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from "react"
-import type { CaseAsset } from "./types"
+import type { CaseAsset, ShowcaseOptions } from "./types"
 import YanimaShowcase, { PhoneMockup, BrowserMockup } from "../YanimaShowcase"
 
 export const CaseGalleryContext = createContext<{
@@ -130,10 +130,17 @@ export function CaseMedia({
   )
 }
 
-export function CaseShowcase({ assets: ids }: { assets: string[] }) {
+export function CaseShowcase({
+  assets: ids,
+  options,
+}: {
+  assets: string[]
+  options?: ShowcaseOptions
+}) {
   const { assets, onOpen } = useContext(CaseGalleryContext)
   return (
     <YanimaShowcase
+      {...options}
       assets={ids.map((id) => assets[id]).filter((asset) => asset?.src)}
       onOpen={onOpen}
       priority

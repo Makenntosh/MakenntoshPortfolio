@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react"
 import type { CaseAsset } from "./types"
 
+const startsInReadingMode = (asset: CaseAsset) =>
+  !!asset.presentation && asset.height > asset.width * 5
+
 export default function CaseLightbox({
   images,
   initialIndex,
@@ -11,14 +14,22 @@ export default function CaseLightbox({
   onClose: () => void
 }) {
   const [index, setIndex] = useState(initialIndex)
-  const [reading, setReading] = useState(false)
+  const [reading, setReading] = useState(() =>
+    startsInReadingMode(images[initialIndex]),
+  )
   const dialog = useRef<HTMLDialogElement>(null)
+  const viewer = useRef<HTMLDivElement>(null)
   const touchStart = useRef<number | null>(null)
   const image = images[index]
   const move = (direction: number) => {
-    setReading(false)
-    setIndex((current) => (current + direction + images.length) % images.length)
+    const next = (index + direction + images.length) % images.length
+    setReading(startsInReadingMode(images[next]))
+    setIndex(next)
   }
+
+  useEffect(() => {
+    viewer.current?.scrollTo(0, 0)
+  }, [index])
 
   useEffect(() => {
     const opener = document.activeElement as HTMLElement | null
@@ -102,6 +113,7 @@ export default function CaseLightbox({
         </button>
       </div>
       <div
+        ref={viewer}
         className={`case-lightbox-viewer ${
           reading
             ? `case-lightbox-reading ${

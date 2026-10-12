@@ -1,0 +1,128 @@
+[
+  {
+    "id": "medway-desktop",
+    "file": "MedWay.png",
+    "title": "Полный desktop-макет",
+    "caption": "Desktop · Полная страница MedWay",
+    "width": 1440,
+    "height": 7479,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-about",
+    "file": "MedWay.png",
+    "title": "О клинике",
+    "caption": "О клинике · Фотография и ключевые преимущества",
+    "width": 1440,
+    "height": 740,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-services",
+    "file": "MedWay.png",
+    "title": "Популярные услуги",
+    "caption": "Услуги · Карточки направлений и стоимости",
+    "width": 1440,
+    "height": 750,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-explanation",
+    "file": "MedWay.png",
+    "title": "Информационный блок",
+    "caption": "Информационный блок · Тёмная панель и карточки",
+    "width": 1440,
+    "height": 907,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-benefits",
+    "file": "MedWay.png",
+    "title": "Преимущества",
+    "caption": "Преимущества · Сетка карточек с иконками",
+    "width": 1440,
+    "height": 903,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-reviews",
+    "file": "MedWay.png",
+    "title": "Отзывы",
+    "caption": "Отзывы · Карточки историй и оценки",
+    "width": 1440,
+    "height": 654,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-prices",
+    "file": "MedWay.png",
+    "title": "Прайс-лист",
+    "caption": "Прайс-лист · Список услуг и стоимость",
+    "width": 1440,
+    "height": 829,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-documents",
+    "file": "MedWay.png",
+    "title": "Документы",
+    "caption": "Документы · Лицензии в макете сайта",
+    "width": 1440,
+    "height": 802,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-contact",
+    "file": "MedWay.png",
+    "title": "Контакты",
+    "caption": "Контакты · Телефон, адрес и область карты",
+    "width": 1440,
+    "height": 682,
+    "presentation": "browser",
+    "address": "med-way.moscow"
+  },
+  {
+    "id": "medway-mobile",
+    "file": "MedWay - mobile.png",
+    "title": "Полный mobile-макет",
+    "caption": "Mobile · Полная страница на узком экране",
+    "width": 400,
+    "height": 13818,
+    "presentation": "phone"
+  },
+  {
+    "id": "medway-mobile-services",
+    "file": "MedWay - mobile.png",
+    "title": "Услуги на телефоне",
+    "caption": "Mobile · Вертикальная последовательность карточек",
+    "width": 400,
+    "height": 2097,
+    "presentation": "phone"
+  },
+  {
+    "id": "medway-mobile-benefits",
+    "file": "MedWay - mobile.png",
+    "title": "Преимущества на телефоне",
+    "caption": "Mobile · Карточки преимуществ в одну колонку",
+    "width": 400,
+    "height": 2023,
+    "presentation": "phone"
+  },
+  {
+    "id": "medway-mobile-contact",
+    "file": "MedWay - mobile.png",
+    "title": "Контакты на телефоне",
+    "caption": "Mobile · Контактная информация и область карты",
+    "width": 400,
+    "height": 887,
+    "presentation": "phone"
+  }
+]

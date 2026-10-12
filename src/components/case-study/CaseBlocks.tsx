@@ -8,6 +8,7 @@ import CaseImageFull, {
 } from "./CaseGallery"
 import CaseProcess, { CaseArchitecture } from "./CaseProcess"
 import type { CaseBlock } from "./types"
+import CaseDesignSystem from "./CaseDesignSystem"
 
 export default function CaseBlocks({ blocks }: { blocks: CaseBlock[] }) {
   return (
@@ -21,6 +22,8 @@ export default function CaseBlocks({ blocks }: { blocks: CaseBlock[] }) {
 
 function CaseBlockView({ block }: { block: CaseBlock }) {
   switch (block.type) {
+    case "design-system":
+      return <CaseDesignSystem system={block.system} />
     case "text":
       return <p className="case-body case-body-narrow">{block.text}</p>
     case "heading":

@@ -12,6 +12,7 @@ import { Footer } from './sections/Footer'
 import { ProjectPage } from './pages/ProjectPage'
 
 const YanimaPage = lazy(() => import('./pages/YanimaPage'))
+const MedwayPage = lazy(() => import('./pages/MedwayPage'))
 
 // ── Minimal hash router ────────────────────────────────────────────────────────
 type Route =
@@ -54,6 +55,10 @@ export default function App() {
         {route.id === 1 ? (
           <Suspense fallback={<div style={{ minHeight: '100vh', color: C.muted, padding: '120px 24px' }} role="status">Загрузка кейса Yanima…</div>}>
             <YanimaPage onBack={goHome} />
+          </Suspense>
+        ) : route.id === 3 ? (
+          <Suspense fallback={<div style={{ minHeight: '100vh', color: C.muted, padding: '120px 24px' }} role="status">Загрузка кейса MedWay…</div>}>
+            <MedwayPage onBack={goHome} />
           </Suspense>
         ) : <ProjectPage projectId={route.id} onBack={goHome} />}
       </div>

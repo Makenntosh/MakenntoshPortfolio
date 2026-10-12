@@ -6,6 +6,7 @@ import medwayImg        from '../imports/image-1.png'
 import vremyaImg        from '../imports/image-2.png'
 import { yanimaMobileScreens } from './yanimaMobileScreens'
 import { yanimaWebAssets } from './yanimaWebScreens'
+import { medwayAssetList } from './medwayAssets'
 
 export type ProjectType = 'startup' | 'freelance' | 'design' | 'dev'
 
@@ -66,16 +67,14 @@ export const PROJECTS: Project[] = [
     year: 'MMXXIV',
     type: 'dev',
     tags: ['Frontend', 'Product Design', 'React', 'TypeScript'],
-    image: 'MedWay_preview.png',
-    gallery: [
-        'MedWay_Preview.png'
-    ],
+    image: `${import.meta.env.BASE_URL}medway/cover.webp`,
+    gallery: medwayAssetList.map(asset => asset.src!),
     brief:
       'Дизайн и готовый лендинг под ключ для наркологической клиники. React + TypeScript, адаптивная вёрстка, акцент на доверии и анонимности.',
     challenge:
       'Вызвать доверие в чувствительной теме. Выстроить визуальную иерархию так, чтобы ключевые аргументы — анонимность, лицензия, статистика — считывались за секунды. Избежать клинической холодности и агрессивной рекламности.',
     result:
-      'Лендинг сдан клиенту и работает. Структура страницы с цифрами (2 400+ пациентов, 93% ремиссия) и чёткими призывами к действию обеспечивает конверсию в звонки.',
+      'Разработан и запущен адаптивный лендинг. Услуги, преимущества, отзывы, документы и контакты собраны в последовательную структуру с заметными действиями для связи с клиникой.',
   },
   {
     id: 4,

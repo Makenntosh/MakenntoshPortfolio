@@ -214,18 +214,23 @@ export default function CaseStudyPage({
             <GoldBarEl />
             {study.overview.showcase ? (
               <>
-                <CaseShowcase assets={study.overview.showcase} />
+                <CaseShowcase
+                  assets={study.overview.showcase}
+                  options={study.overview.showcaseOptions}
+                />
                 <div className="case-mobile-shortcut">
                   <span>
-                    Web · {screenCountLabel(webImageCount)} / Mobile ·{" "}
-                    {screenCountLabel(mobileImageCount)}
+                    {study.overview.screenSummary ??
+                      `Web · ${screenCountLabel(webImageCount)} / Mobile · ${screenCountLabel(mobileImageCount)}`}
                   </span>
                   <div className="case-shortcut-links">
-                    {[
-                      { target: "discovery", label: "Веб-версия ↓" },
-                      { target: "design-system", label: "Дизайн-система ↓" },
-                      { target: "mobile", label: "Мобильное приложение ↓" },
-                    ].map((link) => (
+                    {(
+                      study.overview.shortcuts ?? [
+                        { target: "discovery", label: "Веб-версия ↓" },
+                        { target: "design-system", label: "Дизайн-система ↓" },
+                        { target: "mobile", label: "Мобильное приложение ↓" },
+                      ]
+                    ).map((link) => (
                       <button
                         key={link.target}
                         onClick={() =>
@@ -267,8 +272,8 @@ export default function CaseStudyPage({
           <footer className="case-footer">
             <Ornament />
             <p>
-              Yanima <span aria-hidden="true">✦</span> Product Design / Web &
-              Mobile
+              {study.title} <span aria-hidden="true">✦</span> Product Design /
+              Web & Mobile
             </p>
             <button className="case-back" onClick={onBack}>
               ← Вернуться ко всем работам
