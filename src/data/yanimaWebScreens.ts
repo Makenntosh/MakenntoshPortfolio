@@ -10,7 +10,7 @@ export const yanimaWebAssets: CaseAsset[] = manifest.map((asset) => ({
   presentation: asset.presentation as "browser" | "sheet",
   src: `${base}${asset.id}-preview.webp`,
   fullSrc: `${base}${asset.id}-detail.webp`,
-  originalSrc: `${import.meta.env.BASE_URL}web_version/${encodeURIComponent(asset.file)}`,
+  originalSrc: `${import.meta.env.BASE_URL}${(asset.originalPath ?? `web_version/${asset.file}`).split("/").map(encodeURIComponent).join("/")}`,
   ratioLabel: `${asset.width}:${asset.height}`,
   alt: asset.caption,
 }))

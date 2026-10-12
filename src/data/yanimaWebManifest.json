@@ -19,12 +19,13 @@
   },
   {
     "id": "filters",
-    "file": "Поиск-1.png",
+    "file": "photo_1_2026-10-12_17-09-17.jpg",
     "title": "Фильтры и сортировка",
-    "caption": "Каталог · Раскрытая сортировка выдачи",
+    "caption": "Каталог · Выбор жанров и раскрытая сортировка выдачи",
     "width": 2560,
     "height": 1080,
-    "presentation": "browser"
+    "presentation": "browser",
+    "originalPath": "yanima/photo_1_2026-10-12_17-09-17.jpg"
   },
   {
     "id": "web-releases",
@@ -37,12 +38,13 @@
   },
   {
     "id": "anime",
-    "file": "Страница аниме.png",
+    "file": "photo_2026-10-12_17-24-19.jpg",
     "title": "Страница аниме",
     "caption": "Тайтл · Информация, кадры и связанные аниме",
     "width": 2560,
     "height": 1976,
-    "presentation": "browser"
+    "presentation": "browser",
+    "originalPath": "yanima/photo_2026-10-12_17-24-19.jpg"
   },
   {
     "id": "player",
@@ -172,12 +174,13 @@
   },
   {
     "id": "web-profile",
-    "file": "Профиль.png",
+    "file": "photo_2026-10-12_17-28-15.jpg",
     "title": "Профиль",
     "caption": "Профиль · История, статистика и комментарии",
     "width": 2560,
     "height": 1702,
-    "presentation": "browser"
+    "presentation": "browser",
+    "originalPath": "yanima/photo_2026-10-12_17-28-15.jpg"
   },
   {
     "id": "web-profile-alternate",
@@ -199,12 +202,13 @@
   },
   {
     "id": "web-profile-reply",
-    "file": "Профиль (ответ на комментарии + лайк, дизлайк).png",
+    "file": "photo_2026-10-12_17-28-14.jpg",
     "title": "Ответы и реакции",
     "caption": "Профиль · Ответ на комментарий и реакции",
     "width": 2560,
     "height": 1702,
-    "presentation": "browser"
+    "presentation": "browser",
+    "originalPath": "yanima/photo_2026-10-12_17-28-14.jpg"
   },
   {
     "id": "settings-main",
