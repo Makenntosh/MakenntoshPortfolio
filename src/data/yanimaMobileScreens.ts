@@ -128,7 +128,7 @@ export const yanimaMobileScreens: CaseAsset[] = [
   ),
   screen(
     "mobile-profile",
-    "Профиль.jpg",
+    "yanima/photo_2026-10-12_17-45-38.jpg",
     "Профиль",
     "Профиль · Статистика и история просмотра",
     1460,
